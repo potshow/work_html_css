@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+	<!-- Plugin -->
+	<!-- 간단하게 가져다 쓰는 것들을 플러그인이라고 부른다. -->
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <title>Video.js 사용법 예제</title>
+</head>
+<body>
+		<video controls controls width="800" height="600" poster="img/TheAvengers2012Poster.jpg">
+		<source src="media/developer.mp4" type="video/mp4"/>
+		<source src="media/developer.webm" type="video/webm"/>
+		<!-- 서버에서 실행을 해야 자막이 나옴 -->
+		<track kind="subtitles" src="media/subtitles-ko.vtt" srclang="ko" label="한국어" default>
+		<track kind="subtitles" src="media/subtitles-en.vtt" srclang="en" label="영어">
+	</video>
+	 <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+</body>
+</html>
